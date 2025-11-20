@@ -1,0 +1,27 @@
+:root {
+    --col1: #2C462C;
+    --col2: #FCF9E8;
+    --col3: #A8BCA1;
+    --col4: #6E8B55;
+    --col5: #D6A84A;
+    --col6: #2b2b2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    color: var(--col6);
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: var(--col2) !important;
+    padding: 5px;
+}

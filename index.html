@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>C.O. Lawn and Garden Care</title>
+        <meta name="title" content="C.O. Lawn and Garden Care"/>
+        <meta name="description" content="C.O. Lawn and Garden Care provides the best in all lawn and garden needs"/>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <link href="styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="fixed w-full z-20 top-0 start-0 border-b flex justify-between items-center p-[10px]">
+                <img class="h-[100px] object-contain" src="assets/logo.png" alt="C.O. Lawn and Garden Care Logo">
+                <div class="flex flex-wrap justify-center items-center gap-2">
+                    <a class="text-lg-sm bg-[#6E8B55] hover:bg-[#6E8B55]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-center" href="tel:+6144216698">Call Us</a>
+                    <a class="text-lg-sm bg-[#6E8B55] hover:bg-[#6E8B55]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-center ml-5 mr-5" href="#contact">Get A Quote</a>
+                </div>
+            </nav>
+        </header>
+        <section class="h-[80vh] pt-40 bg-[url(assets/lawnmower.jpg)] bg-cover flex justify-center items-center p-20">
+            <div class="h-[200px] aspect-square rounded-full bg-[var(--col2)] flex justify-center items-center">
+                <img class="rounded-full" src="assets/logo.png" alt="C.O. Lawn and Garden Care Logo">
+            </div>
+        </section>
+        <section class="p-10 flex flex-col items-center gap-5 px-[10%]">
+            <p class="text-4xl">Welcome to C.O. Lawn and Garden Care!</p>
+            <p class="text-2xl text-[var(--col4)]">
+                C.O. Lawn and Garden Care is South-West Sydney's leading specialist in the lawn and garden care industry.
+            </p>
+        </section>
+        <section class="px-[5%] pb-10">
+            <div class="grid grid-cols-2 items-center md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <img class="h-auto max-w-full rounded-base saturate-150" src="assets/edging.jpg" alt="">
+                    <p class="text-2xl">Edging</p>
+                </div>
+                <div class="grid gap-4">
+                    <img class="relative h-auto max-w-full rounded-base" src="assets/mowing.jpg" alt="Mowing">
+                    <p class="text-2xl">Mowing</p>
+                </div>
+                <div class="grid gap-4">
+                    <img class="h-auto max-w-full rounded-base saturate-100" src="assets/fertilizer.jpg" alt="">
+                    <p class="text-2xl">Fertilising</p>
+                </div>
+                <div class="grid gap-4">
+                    <img class="h-auto max-w-full rounded-base saturate-150" src="assets/hedging.jpg" alt="">
+                    <p class="text-2xl">Hedging</p>
+                </div>
+            </div>
+        </section>
+        <section class="p-10 bg-[var(--col4)] px-[10%]">
+            <p class="text-5xl text-white pb-5">Why choose C.O. Lawn and Garden Care?</p>
+            <p class="text-lg pb-3">
+                At C.O. Lawn and Garden Care, we believe your weekends should be spent relaxing - not pushing 
+                a mower. Our goal is to give every customer a lawn they can enjoy without the effort. Whether 
+                it's mowing, edging, hedging, fertilising, or a full garden tidy-up, we take care of it all.
+            </p>
+            <p class="text-lg">
+                Tired of overgrown grass or messy garden beds? We offer reliable, affordable lawn and garden 
+                maintenance that keeps your property looking its best all year round. From a quick one-off 
+                clean-up to regular scheduled care, we make it easy to keep your outdoor space neat, green and 
+                hassle-free.
+            </p>
+        </section>
+        <section id="contact" class="p-10 max-w-md mx-auto">
+            <p class="text-5xl mb-5">Get in touch!</p>
+            <form class="max-w-md mx-auto">
+                <div class="mb-5">
+                    <label for="full-name" class="block mb-2.5 text-md text-heading">Full Name</label>
+                    <input type="text" id="full-name" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="John Smith" required />
+                </div>
+                <div class="mb-5">
+                    <label for="phone" class="block mb-2.5 text-md text-heading">Phone Number</label>
+                    <input type="phone" id="phone" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="0412 345 678" required />
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="block mb-2.5 text-md text-heading">Email Address</label>
+                    <input type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="name@example.com" required />
+                </div>
+                <div class="mb-5">
+                    <label for="what-needed" class="block mb-2.5 text-md text-heading">Email Address</label>
+                    <input type="" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="name@example.com" required />
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
