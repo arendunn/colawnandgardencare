@@ -86,17 +86,17 @@
                 <div>
                     <p class="text-3xl">Medium Yard</p>
                     <p class="text-md">200m<sup>2</sup> - 400m<sup>2</sup></p>
-                    <p class="text-2xl pt-2 text-black">$60-$75</p>
+                    <p class="text-2xl pt-2 text-black">$85-$105</p>
                 </div>
                 <div>
                     <p class="text-3xl">Large Yard</p>
                     <p class="text-md">400m<sup>2</sup> - 800m<sup>2</sup></p>
-                    <p class="text-2xl pt-2 text-black">$60-$75</p>
+                    <p class="text-2xl pt-2 text-black">$120-$160</p>
                 </div>
                 <div>
                     <p class="text-3xl">Acreage</p>
                     <p class="text-md">800m<sup>2</sup>+</p>
-                    <p class="text-2xl pt-2 text-black">$60-$75</p>
+                    <p class="text-2xl pt-2 text-black">From $160</p>
                 </div>
             </div>
             <hr class="h-0.5 border-none bg-[var(--col4)] mb-10">
@@ -139,13 +139,13 @@
                     <p class="text-3xl">Standard</p>
                     <p class="text-md">All in Basic</p>
                     <p class="text-md">+ Aerate and Wetting Agent</p>
-                    <p class="text-2xl pt-2 text-black">From $250</p>
+                    <p class="text-2xl pt-2 text-black">From $450</p>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                     <p class="text-3xl">Full</p>
                     <p class="text-md">All in Standard
                     <p class="text-md">+ Dethatch, Overseed and Top Dress</p>
-                    <p id="contact" class="text-2xl pt-2 text-black item">From $250</p>
+                    <p id="contact" class="text-2xl pt-2 text-black item">From $750</p>
                 </div>
             </div>
         </section>
@@ -153,22 +153,24 @@
             <div class="absolute inset-0 overflow-hidden bg-[url(assets/background.jpg)] bg-cover blur-sm scale-110"></div>
             <div class="relative z-10 p-10 max-w-md mx-auto bg-[var(--col4)] rounded-3xl">
                 <p class="text-5xl mb-5">Get in touch!</p>
-                <form class="max-w-md mx-auto">
+                <form class="max-w-md mx-auto"
+                action="https://formspree.io/f/mpwebdgw"
+                method="POST">
                     <div class="mb-5">
                         <label for="full-name" class="block mb-2.5 text-lg text-heading">Full Name:</label>
-                        <input type="text" id="full-name" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="John Smith" required />
+                        <input type="text" name="full-name" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="John Smith" required />
                     </div>
                     <div class="mb-5">
                         <label for="phone" class="block mb-2.5 text-lg text-heading">Phone Number:</label>
-                        <input type="phone" id="phone" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="0412 345 678" required />
+                        <input type="phone" name="phone" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="0412 345 678" required />
                     </div>
                     <div class="mb-5">
                         <label for="email" class="block mb-2.5 text-lg text-heading">Email Address:</label>
-                        <input type="email" id="email" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="name@example.com" required />
+                        <input type="email" name="email" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="name@example.com" required />
                     </div>
                     <div class="mb-5">
                         <label for="location" class="block mb-2.5 text-lg text-heading">Where are you located?</label>
-                        <input type="text" id="location" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Sydney 2000" required />
+                        <input type="text" name="location" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Sydney 2000" required />
                     </div>
                     <div class="mb-5">
                         <fieldset>
@@ -176,41 +178,41 @@
                             <div class="bg-white/80 border border-default-medium px-3 py-1 pr-5 grid grid-cols-1 sm:grid-cols-2 ">
                                 <div class="flex flex-col">
                                     <label>
-                                        <input type="checkbox" id="mowing" name="what-needed" value="mowing" required/>
+                                        <input type="checkbox" id="mowing" name="what-needed" value="mowing"/>
                                         Mowing
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="edging" name="what-needed" value="edging" required/>
+                                        <input type="checkbox" id="edging" name="what-needed" value="edging"/>
                                         Edging
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="aerating" name="what-needed" value="aerating" required/>
+                                        <input type="checkbox" id="aerating" name="what-needed" value="aerating"/>
                                         Aerating
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="fertilising" name="what-needed" value="fertilising" required/>
+                                        <input type="checkbox" id="fertilising" name="what-needed" value="fertilising"/>
                                         Fertilising
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="weed-control" name="what-needed" value="weed-control" required/>
+                                        <input type="checkbox" id="weed-control" name="what-needed" value="weed-control"/>
                                         Weed Control
                                     </label>
                                 </div>
                                 <div class="flex flex-col">
                                     <label>
-                                        <input type="checkbox" id="lawn-renovation" name="what-needed" value="lawn-renovation" required/>
+                                        <input type="checkbox" id="lawn-renovation" name="what-needed" value="lawn-renovation"/>
                                         Lawn Renovation
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="hedge-trimming" name="what-needed" value="hedge-trimming" required/>
+                                        <input type="checkbox" id="hedge-trimming" name="what-needed" value="hedge-trimming"/>
                                         Hedge Trimming
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="yard-clean-up" name="what-needed" value="yard-clean-up" required/>
+                                        <input type="checkbox" id="yard-clean-up" name="what-needed" value="yard-clean-up"/>
                                         Yard Clean-up
                                     </label>
                                     <label>
-                                        <input type="checkbox" id="garden-waste-removal" name="what-needed" value="garden-waste-removal" required/>
+                                        <input type="checkbox" id="garden-waste-removal" name="what-needed" value="garden-waste-removal"/>
                                         Garden Waste Removal
                                     </label>
                                 </div>
@@ -229,11 +231,11 @@
                     </div>
                     <div class="mb-5">
                         <label for="date" class="block mb-2.5 text-lg text-heading">Set a date:</label>
-                        <input type="date" id="date" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" />
+                        <input type="date" name="date" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" />
                     </div>
                     <div class="mb-5">
                         <label for="info" class="block mb-2.5 text-lg text-heading">Any additional information?</label>
-                        <textarea id="info" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Requirements, special requests, ect."></textarea>
+                        <textarea name="info" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Requirements, special requests, ect."></textarea>
                     </div>
                     <div class="mb-5 flex justify-center">
                         <button type="submit" class="text-md bg-[#A8BCA1] hover:bg-[#A8BCA1]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-centere">Submit</button>
