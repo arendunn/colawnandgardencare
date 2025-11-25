@@ -22,7 +22,7 @@
             <nav class="fixed w-full z-20 top-0 start-0 border-b flex justify-between items-center p-[10px]">
                 <img class="h-[100px] object-contain" src="assets/logo.png" alt="C.O. Lawn and Garden Care Logo">
                 <div class="flex flex-wrap justify-center items-center gap-2">
-                    <a class="text-lg-sm bg-[#6E8B55] hover:bg-[#6E8B55]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-center" href="tel:+61466216698">Call Us</a>
+                    <a class="text-lg-sm bg-[#6E8B55] hover:bg-[#6E8B55]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-center" href="tel:+0401052159">Call Us</a>
                     <a class="text-lg-sm bg-[#6E8B55] hover:bg-[#6E8B55]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-center ml-5 mr-5" href="#contact">Get A Quote</a>
                 </div>
             </nav>
@@ -59,107 +59,221 @@
             </div>
         </section>
         <section class="p-10 bg-[var(--col4)] px-[10%]">
-            <p class="text-5xl text-white pb-5">Why choose C.O. Lawn and Garden Care?</p>
+            <p class="text-5xl pb-5 text-black/80">Why choose C.O. Lawn and Garden Care?</p>
             <p class="text-lg pb-3">
                 At C.O. Lawn and Garden Care, we believe your weekends should be spent relaxing - not pushing 
                 a mower. Our goal is to give every customer a lawn they can enjoy without the effort. Whether 
                 it's mowing, edging, hedging, fertilising, or a full garden tidy-up, we take care of it all.
             </p>
-            <p class="text-lg">
+            <p id="pricing" class="text-lg">
                 Tired of overgrown grass or messy garden beds? We offer reliable, affordable lawn and garden 
                 maintenance that keeps your property looking its best all year round. From a quick one-off 
                 clean-up to regular scheduled care, we make it easy to keep your outdoor space neat, green and 
                 hassle-free.
             </p>
         </section>
-        <section id="contact" class="p-10 max-w-md mx-auto bg-[#6E8B55]">
-            <p class="text-5xl mb-5">Get in touch!</p>
-            <form class="max-w-md mx-auto">
-                <div class="mb-5">
-                    <label for="full-name" class="block mb-2.5 text-md text-heading">Full Name:</label>
-                    <input type="text" id="full-name" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="John Smith" required />
+        <section class="p-10 bg-[var(--col3)] px-[10%]">
+            <div class="flex flex-col items-center">
+                <p class="text-5xl pb-5">Pricing Guide</p>
+                <p class="text-4xl pb-5 text-black/70">Lawn Mowing</p>
+            </div>
+            <div class="grid grid-cols-2 text-[var(--col1)] items-center text-center md:grid-cols-4 gap-7 pb-10">
+                <div>
+                    <p class="text-3xl">Small Yard</p>
+                    <p class="text-md">Up to 200m<sup>2</sup></p>
+                    <p class="text-2xl pt-2 text-black">$60-$75</p>
                 </div>
-                <div class="mb-5">
-                    <label for="phone" class="block mb-2.5 text-md text-heading">Phone Number:</label>
-                    <input type="phone" id="phone" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="0412 345 678" required />
+                <div>
+                    <p class="text-3xl">Medium Yard</p>
+                    <p class="text-md">200m<sup>2</sup> - 400m<sup>2</sup></p>
+                    <p class="text-2xl pt-2 text-black">$60-$75</p>
                 </div>
-                <div class="mb-5">
-                    <label for="email" class="block mb-2.5 text-md text-heading">Email Address:</label>
-                    <input type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="name@example.com" required />
+                <div>
+                    <p class="text-3xl">Large Yard</p>
+                    <p class="text-md">400m<sup>2</sup> - 800m<sup>2</sup></p>
+                    <p class="text-2xl pt-2 text-black">$60-$75</p>
                 </div>
-                <div class="mb-5">
-                    <label for="location" class="block mb-2.5 text-md text-heading">Where are you located?</label>
-                    <input type="text" id="location" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Sydney 2000" required />
+                <div>
+                    <p class="text-3xl">Acreage</p>
+                    <p class="text-md">800m<sup>2</sup>+</p>
+                    <p class="text-2xl pt-2 text-black">$60-$75</p>
                 </div>
-                <div class="mb-5">
-                    <fieldset>
-                        <legend class="block mb-2.5 text-md text-heading">What did you need done?</legend>
-                        <div class="bg-neutral-secondary-medium border border-default-medium px-3 py-1 flex justify-between pr-5">
-                            <div class="flex flex-col">
-                                <label>
-                                    <input type="checkbox" id="mowing" name="what-needed" value="mowing" required/>
-                                    Mowing
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="edging" name="what-needed" value="edging" required/>
-                                    Edging
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="aerating" name="what-needed" value="aerating" required/>
-                                    Aerating
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="fertilising" name="what-needed" value="fertilising" required/>
-                                    Fertilising
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="weed-control" name="what-needed" value="weed-control" required/>
-                                    Weed Control
-                                </label>
-                            </div>
-                            <div class="flex flex-col">
-                                <label>
-                                    <input type="checkbox" id="lawn-renovation" name="what-needed" value="lawn-renovation" required/>
-                                    Lawn Renovation
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="hedge-trimming" name="what-needed" value="hedge-trimming" required/>
-                                    Hedge Trimming
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="yard-clean-up" name="what-needed" value="yard-clean-up" required/>
-                                    Yard Clean-up
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="garden-waste-removal" name="what-needed" value="garden-waste-removal" required/>
-                                    Garden Waste Removal
-                                </label>
-                            </div>
-                        </div>
-                    </fieldset>
+            </div>
+            <hr class="h-0.5 border-none bg-[var(--col4)] mb-10">
+            <div class="flex flex-col items-center">
+                <p class="text-4xl mb-5 text-black/70">Hedging</p>
+            </div>
+            <div class="grid grid-cols-2 text-[var(--col1)] items-center text-center md:grid-cols-4 gap-7 pb-10">
+                <div>
+                    <p class="text-3xl">Low Hedges</p>
+                    <p class="text-md">Up to 1m high</p>
+                    <p class="text-2xl pt-2 text-black">$50-$150</p>
                 </div>
-                <div class="mb-5">
-                    <label for="wheen-needed" class="block mb-2.5 text-md text-heading">When did you need the job done?</label>
-                    <select id="when-needed" name="selected-when-needed" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs text-neutral-400" required>
-                        <option value="" selected>Select an option</option>
-                        <option value="flexible" class="text-black">I am flexible</option>
-                        <option value="next-few-weeks" class="text-black">In the next few weeks</option>
-                        <option value="urgently" class="text-black">Urgently</option>
-                        <option value="set-a-date" class="text-black">Set a date</option>
-                    </select>
+                <div>
+                    <p class="text-3xl">Medium Hedges</p>
+                    <p class="text-md">1m - 2m high</p>
+                    <p class="text-2xl pt-2 text-black">$120-$300</p>
                 </div>
-                <div class="mb-5">
-                    <label for="date" class="block mb-2.5 text-md text-heading">Set a date:</label>
-                    <input type="date" id="date" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" />
+                <div>
+                    <p class="text-3xl">Tall Hedges</p>
+                    <p class="text-md">2m - 3m high</p>
+                    <p class="text-2xl pt-2 text-black">$250-$300</p>
                 </div>
-                <div class="mb-5">
-                    <label for="info" class="block mb-2.5 text-md text-heading">Any additional information?</label>
-                    <textarea id="info" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Requirements, special requests, ect."></textarea>
+                <div>
+                    <p class="text-3xl">Very Tall Hedges</p>
+                    <p class="text-md">Ladder Work</p>
+                    <p class="text-2xl pt-2 text-black">$120/hr</p>
                 </div>
-                <div class="mb-5 flex justify-center">
-                    <button type="submit" class="text-md bg-[#A8BCA1] hover:bg-[#A8BCA1]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-centere">Submit</button>
+            </div>
+            <hr class="h-0.5 border-none bg-[var(--col4)] mb-10">
+            <div class="flex justify-center items-center text-center">
+                <p class="text-4xl pb-5 text-black/70">Renovation Packages</p>
+            </div>
+            <div class="grid grid-cols-2 text-[var(--col1)] justify-center text-center md:grid-cols-3 gap-7">
+                <div>
+                    <p class="text-3xl">Basic</p>
+                    <p class="text-md">Scalp, Fertilise, Edge Clean-up</p>
+                    <p class="text-2xl pt-2 text-black">From $250</p>
                 </div>
-            </form>
+                <div>
+                    <p class="text-3xl">Standard</p>
+                    <p class="text-md">All in Basic</p>
+                    <p class="text-md">+ Aerate and Wetting Agent</p>
+                    <p class="text-2xl pt-2 text-black">From $250</p>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <p class="text-3xl">Full</p>
+                    <p class="text-md">All in Standard
+                    <p class="text-md">+ Dethatch, Overseed and Top Dress</p>
+                    <p id="contact" class="text-2xl pt-2 text-black item">From $250</p>
+                </div>
+            </div>
         </section>
+        <section class="relative inset-0 overflow-hidden p-10">
+            <div class="absolute inset-0 overflow-hidden bg-[url(assets/background.jpg)] bg-cover blur-sm scale-110"></div>
+            <div class="relative z-10 p-10 max-w-md mx-auto bg-[var(--col4)] rounded-3xl">
+                <p class="text-5xl mb-5">Get in touch!</p>
+                <form class="max-w-md mx-auto">
+                    <div class="mb-5">
+                        <label for="full-name" class="block mb-2.5 text-lg text-heading">Full Name:</label>
+                        <input type="text" id="full-name" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="John Smith" required />
+                    </div>
+                    <div class="mb-5">
+                        <label for="phone" class="block mb-2.5 text-lg text-heading">Phone Number:</label>
+                        <input type="phone" id="phone" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="0412 345 678" required />
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block mb-2.5 text-lg text-heading">Email Address:</label>
+                        <input type="email" id="email" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="name@example.com" required />
+                    </div>
+                    <div class="mb-5">
+                        <label for="location" class="block mb-2.5 text-lg text-heading">Where are you located?</label>
+                        <input type="text" id="location" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Sydney 2000" required />
+                    </div>
+                    <div class="mb-5">
+                        <fieldset>
+                            <legend class="block mb-2.5 text-lg text-heading">What did you need done?</legend>
+                            <div class="bg-white/80 border border-default-medium px-3 py-1 pr-5 grid grid-cols-1 sm:grid-cols-2 ">
+                                <div class="flex flex-col">
+                                    <label>
+                                        <input type="checkbox" id="mowing" name="what-needed" value="mowing" required/>
+                                        Mowing
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="edging" name="what-needed" value="edging" required/>
+                                        Edging
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="aerating" name="what-needed" value="aerating" required/>
+                                        Aerating
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="fertilising" name="what-needed" value="fertilising" required/>
+                                        Fertilising
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="weed-control" name="what-needed" value="weed-control" required/>
+                                        Weed Control
+                                    </label>
+                                </div>
+                                <div class="flex flex-col">
+                                    <label>
+                                        <input type="checkbox" id="lawn-renovation" name="what-needed" value="lawn-renovation" required/>
+                                        Lawn Renovation
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="hedge-trimming" name="what-needed" value="hedge-trimming" required/>
+                                        Hedge Trimming
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="yard-clean-up" name="what-needed" value="yard-clean-up" required/>
+                                        Yard Clean-up
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="garden-waste-removal" name="what-needed" value="garden-waste-removal" required/>
+                                        Garden Waste Removal
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mb-5">
+                        <label for="wheen-needed" class="block mb-2.5 text-lg text-heading">When did you need the job done?</label>
+                        <select id="when-needed" name="selected-when-needed" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs text-neutral-400" required>
+                            <option value="" selected>Select an option</option>
+                            <option value="flexible" class="text-black">I am flexible</option>
+                            <option value="next-few-weeks" class="text-black">In the next few weeks</option>
+                            <option value="urgently" class="text-black">Urgently</option>
+                            <option value="set-a-date" class="text-black">Set a date</option>
+                        </select>
+                    </div>
+                    <div class="mb-5">
+                        <label for="date" class="block mb-2.5 text-lg text-heading">Set a date:</label>
+                        <input type="date" id="date" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" />
+                    </div>
+                    <div class="mb-5">
+                        <label for="info" class="block mb-2.5 text-lg text-heading">Any additional information?</label>
+                        <textarea id="info" class="bg-white/90 border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-neutral-400" placeholder="Requirements, special requests, ect."></textarea>
+                    </div>
+                    <div class="mb-5 flex justify-center">
+                        <button type="submit" class="text-md bg-[#A8BCA1] hover:bg-[#A8BCA1]/90 box-border border border-transparent rounded-2xl px-4 py-1.5 inline-flex items-centere">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="p-10 bg-[var(--col1)] text-lg text-[var(--col2)] px-[10%] sm:flex sm:flex-col sm:text-center sm:items-center">
+            <div class="h-[150px] aspect-square rounded-full bg-[var(--col2)] flex justify-center items-center">
+                <img class="rounded-full" src="assets/logo.png" alt="C.O. Lawn and Garden Care Logo">
+            </div>
+            <p class="text-lg opacity-90 pt-5">
+                Quality care you can rely on.
+            </p>
+            <div class="flex gap-6 text-sm opacity-90 pt-10">
+                <a href="#pricing" class="hover:opacity-100">Pricing</a>
+                <a href="#contact" class="hover:opacity-100">Contact</a>
+            </div>
+            <div class="flex gap-6 mt-10">
+                <a href="https://instagram.com/c.o.lawnandgardencare" target="_blank"
+                class="opacity-80 hover:opacity-100">
+                    <svg class="h-7 w-7" fill="white" viewBox="0 0 24 24">
+                        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-2.9a1.1 1.1 0 100 2.2 1.1 1.1 0 000-2.2z"/>
+                    </svg>
+                </a>
+                <a href="tel:0401052159" class="opacity-80 hover:opacity-100">
+                    <svg class="h-7 w-7" fill="white" viewBox="0 0 24 24">
+                        <path d="M6.6 2.3l2.1 4.8c.2.5.1 1-.2 1.4L7.2 9.9c1.3 2.6 3.4 4.7 6 6l1.3-1.3c.4-.4.9-.5 1.4-.3l4.8 2.1c.9.4 1.3 1.5.8 2.3l-1.6 3c-.4.7-1.2 1.1-2 .9C9.3 20.8 3.2 14.7 1.4 6.6c-.2-.8.2-1.6.9-2l3-1.6c.8-.5 1.9-.1 2.3.8z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-xs opacity-90 mt-10">
+                © C.O. Lawn and Garden Care. All rights reserved.
+            </p>
+            <p class="text-xs opacity-90">
+                Website Built by 
+                <a class="underline" href="https://truebuildwebsites.com" target="_blank" rel="noopener">
+                    TrueBuild Websites
+                </a>
+            </p>
+        </footer>
     </body>
 </html>
