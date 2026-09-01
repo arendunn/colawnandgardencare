@@ -26,3 +26,7 @@ nav {
     background-color: var(--col2) !important;
     padding: 5px;
 }
+
+.contact {
+    padding: 10px;
+}
